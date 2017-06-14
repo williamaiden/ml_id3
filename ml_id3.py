@@ -2,7 +2,7 @@
 '''
 Created on 2017年6月14日
 
-@author: qingdujun
+@author: William Aiden
 '''
 
 from sklearn.feature_extraction import DictVectorizer
