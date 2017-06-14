@@ -2,7 +2,7 @@
 '''
 Created on 2017年6月14日
 
-@author: William Aiden
+@author: qingdujun
 '''
 
 from sklearn.feature_extraction import DictVectorizer
@@ -10,7 +10,24 @@ import csv
 from sklearn import preprocessing
 from sklearn import tree
 
+# RID,age,income,student,credit_rating,class_buys_computer
+# 1,youth,high,no,fair,no
+# 2,youth,high,no,excellent,no
+# 3,middle_aged,high,no,fair,yes
+# 4,senior,medium,no,fair,yes
+# 5,senior,low,yes,fair,yes
+# 6,senior,low,yes,excellent,no
+# 7,middle_aged,low,yes,excellent,yes
+# 8,youth,medium,no,fair,no
+# 9,youth,low,yes,fair,yes
+# 10,senior,medium,yes,fair,yes
+# 11,youth,medium,yes,excellent,yes
+# 12,middle_aged,medium,no,excellent,yes
+# 13,middle_aged,high,yes,fair,yes
+# 14,senior,medium,no,excellent,no
+
 data = open(r'id3_data.csv','rb')
+print(data) #<open file 'id3_data.csv', mode 'rb' at 0x00000000052190C0>
 reader = csv.reader(data)
 print(reader) #<_csv.reader object at 0x0000000005338648>
 header = reader.next()
